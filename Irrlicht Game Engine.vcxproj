@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGridSceneNode.h" />
+    <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="MyApp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SceneDisplay.h" />
+    <ClInclude Include="wxIrrlicht.h" />
+    <ClInclude Include="wxSizeReportCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CGridSceneNode.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="MyApp.cpp" />
+    <ClCompile Include="SceneDisplay.cpp" />
+    <ClCompile Include="wxIrrlicht.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Irrlicht Game Engine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Editor\icons\create_2ditem.png" />
+    <Image Include="Assets\Editor\icons\create_2dmobileinput.png" />
+    <Image Include="Assets\Editor\icons\create_billboard.png" />
+    <Image Include="Assets\Editor\icons\create_directionallight.png" />
+    <Image Include="Assets\Editor\icons\create_folder.png" />
+    <Image Include="Assets\Editor\icons\create_hotspot.png" />
+    <Image Include="Assets\Editor\icons\create_particleSystem.png" />
+    <Image Include="Assets\Editor\icons\create_path.png" />
+    <Image Include="Assets\Editor\icons\create_pathnode.png" />
+    <Image Include="Assets\Editor\icons\create_pointlight.png" />
+    <Image Include="Assets\Editor\icons\create_roomcreator.png" />
+    <Image Include="Assets\Editor\icons\create_skybox.png" />
+    <Image Include="Assets\Editor\icons\create_sound.png" />
+    <Image Include="Assets\Editor\icons\create_terrain.png" />
+    <Image Include="Assets\Editor\icons\create_vertical_billboard.png" />
+    <Image Include="Assets\Editor\icons\edit_camera.png" />
+    <Image Include="Assets\Editor\icons\file_new.png" />
+    <Image Include="Assets\Editor\icons\file_open.png" />
+    <Image Include="Assets\Editor\icons\file_save.png" />
+    <Image Include="Assets\Editor\icons\irr.ico" />
+    <Image Include="Assets\Editor\icons\mesh_cone.png" />
+    <Image Include="Assets\Editor\icons\mesh_cube.png" />
+    <Image Include="Assets\Editor\icons\mesh_cylinder.png" />
+    <Image Include="Assets\Editor\icons\mesh_disk.png" />
+    <Image Include="Assets\Editor\icons\mesh_plane.png" />
+    <Image Include="Assets\Editor\icons\mesh_sphere.png" />
+    <Image Include="Assets\Editor\icons\mesh_tree.png" />
+    <Image Include="Assets\Editor\icons\move.png" />
+    <Image Include="Assets\Editor\icons\polyedit_add_edge.png" />
+    <Image Include="Assets\Editor\icons\polyedit_edge.png" />
+    <Image Include="Assets\Editor\icons\polyedit_point.png" />
+    <Image Include="Assets\Editor\icons\polyedit_select.png" />
+    <Image Include="Assets\Editor\icons\polyedit_select_square.png" />
+    <Image Include="Assets\Editor\icons\polyedit_triangle.png" />
+    <Image Include="Assets\Editor\icons\poly_move.png" />
+    <Image Include="Assets\Editor\icons\poly_rotate.png" />
+    <Image Include="Assets\Editor\icons\poly_scale.png" />
+    <Image Include="Assets\Editor\icons\publish_settings.png" />
+    <Image Include="Assets\Editor\icons\publish_test.png" />
+    <Image Include="Assets\Editor\icons\redo.png" />
+    <Image Include="Assets\Editor\icons\rotate.png" />
+    <Image Include="Assets\Editor\icons\scale.png" />
+    <Image Include="Assets\Editor\icons\terrain_flatten.png" />
+    <Image Include="Assets\Editor\icons\terrain_grass.png" />
+    <Image Include="Assets\Editor\icons\terrain_mountain.png" />
+    <Image Include="Assets\Editor\icons\terrain_noise.png" />
+    <Image Include="Assets\Editor\icons\terrain_paint.png" />
+    <Image Include="Assets\Editor\icons\terrain_raise.png" />
+    <Image Include="Assets\Editor\icons\undo.png" />
+    <Image Include="Assets\Editor\icons\view_front.png" />
+    <Image Include="Assets\Editor\icons\view_left.png" />
+    <Image Include="Assets\Editor\icons\view_perspective.png" />
+    <Image Include="Assets\Editor\icons\view_top.png" />
+    <Image Include="Assets\Editor\icons\water.png" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dc8a586f-d5f5-4aa7-876a-14092a53c2a0}</ProjectGuid>
+    <RootNamespace>IrrlichtGameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\visual studio projects\c++\libraries\irrlicht-1.8.5\include;$(WXWIN)\include\msvc;$(WXWIN)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\visual studio projects\c++\libraries\irrlicht-1.8.5\lib\Win64-visualStudio;$(WXWIN)\lib\vc_lib</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(WXWIN)\include\msvc;$(WXWIN)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\visual studio projects\c++\libraries\irrlicht-1.8.5\include;$(WXWIN)\include\msvc;$(WXWIN)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\visual studio projects\c++\libraries\irrlicht-1.8.5\lib\Win64-visualStudio;$(WXWIN)\lib\vc_x64_lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\visual studio projects\c++\libraries\irrlicht-1.8.5\include;$(WXWIN)\include\msvc;$(WXWIN)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\visual studio projects\c++\libraries\irrlicht-1.8.5\lib\Win64-visualStudio;$(WXWIN)\lib\vc_x64_lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
