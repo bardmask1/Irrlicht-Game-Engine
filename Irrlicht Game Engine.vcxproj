@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CCameraSceneNodeUnity.h" />
     <ClInclude Include="CGridSceneNode.h" />
     <ClInclude Include="MainFrame.h" />
     <ClInclude Include="MyApp.h" />

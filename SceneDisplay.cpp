@@ -18,7 +18,7 @@ SceneDisplay::SceneDisplay(wxIrrlicht* irrlichtWindow)
 	device->getFileSystem()->addFileArchive("Assets/Editor/");
 
 	scene::ICameraSceneNode* cam[2] = { 0, 0 };
-	cam[0] = smgr->addCameraSceneNodeMaya();
+	cam[0] = smgr->addCameraSceneNodeMaya(0, -200.0f, 200.0f, 200.0f, -1, 100.0f);
 	cam[0]->setName("maya Cam");
 	cam[0]->setFarValue(20000.f);
 	cam[0]->setTarget(vector3df(0, 30, 0));
@@ -33,18 +33,15 @@ SceneDisplay::SceneDisplay(wxIrrlicht* irrlichtWindow)
 
 	smgr->setActiveCamera(cam[0]);
 
-	CGridSceneNode* gridSceneNode = new CGridSceneNode(smgr->getRootSceneNode(), smgr, -1, 1);
-	gridSceneNode->setGridsSize(irr::core::dimension2df(2500, 2500));
-	gridSceneNode->
-	gridSceneNode->getGrid(0).setSpacing(10.f);
-	gridSceneNode->getGrid(0).setGridColor(irr::video::SColor(200, 255, 255, 255));
-	gridSceneNode->drop();  // added to scene already, that still has a reference
-	gridSceneNode->setIsDebugObject(true);
+	grid = new CGridSceneNode(smgr->getRootSceneNode(), smgr, -1, 1);
+	grid->setGridsSize(irr::core::dimension2df(2500, 2500));
+	grid->getGrid(0).setSpacing(10.f);
+	grid->getGrid(0).setGridColor(irr::video::SColor(200, 255, 255, 255));
+	grid->drop();  // added to scene already, that still has a reference
+	grid->setIsDebugObject(true);
 
 
-	//CreateGrid();
-
-	//CreateCube();
+	CreateCube();
 	
 	smgr->addSkyBoxSceneNode(
 		driver->getTexture("Editor/skyboxes/irrlicht2_up.jpg"),

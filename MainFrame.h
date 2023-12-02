@@ -22,6 +22,7 @@ class MainFrame : public wxFrame
     enum
     {
         ID_Empty,
+        ID_GridToggle,
         ID_CreateTree = wxID_HIGHEST + 1,
         ID_CreateGrid,
         ID_CreateText,
@@ -141,6 +142,7 @@ private:
     void OnCreatePlane(wxCommandEvent& event);
 
     void UpdateHeirarchy(wxTreeCtrl* tree);
+    void ToggleGrid(wxCommandEvent& event);
 
 private:
 

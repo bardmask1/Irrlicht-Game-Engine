@@ -21,5 +21,6 @@ public:
 	IrrlichtDevice* device;
 	ISceneManager* smgr;
 	IVideoDriver* driver;
+	CGridSceneNode* grid;
 };
 

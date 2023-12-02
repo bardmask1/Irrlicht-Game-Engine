@@ -36,6 +36,9 @@
     <ClInclude Include="CGridSceneNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CCameraSceneNodeUnity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyApp.cpp">

@@ -63,6 +63,7 @@ wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
     EVT_MENU(ID_SampleItem + 2, MainFrame::OnCreateSphere)
     EVT_MENU(ID_SampleItem + 3, MainFrame::OnCreateCylinder)
     EVT_MENU(ID_SampleItem + 4, MainFrame::OnCreatePlane)
+    EVT_MENU(ID_GridToggle, MainFrame::ToggleGrid)
 
     EVT_UPDATE_UI(ID_NotebookTabFixedWidth, MainFrame::OnUpdateUI)
     EVT_UPDATE_UI(ID_NotebookNoCloseButton, MainFrame::OnUpdateUI)
@@ -162,6 +163,8 @@ MainFrame::MainFrame(wxWindow* parent,
     view_menu->Append(ID_CreateSizeReport, _("Show Size Reporter"));
 
     wxMenu* options_menu = new wxMenu;
+    wxMenuItem* gridOption = options_menu->AppendCheckItem(ID_GridToggle, _("Use Grid"));
+    gridOption->Check(true);
     options_menu->AppendRadioItem(ID_TransparentHint, _("Transparent Hint"));
     options_menu->AppendRadioItem(ID_VenetianBlindsHint, _("Venetian Blinds Hint"));
     options_menu->AppendRadioItem(ID_RectangleHint, _("Rectangle Hint"));
@@ -939,6 +942,11 @@ void MainFrame::UpdateHeirarchy(wxTreeCtrl* tree)
 
     }
     tree->Expand(root);
+}
+
+void MainFrame::ToggleGrid(wxCommandEvent& event)
+{
+    sceneDisplay->grid->setVisible(!sceneDisplay->grid->isVisible());
 }
 
 wxSizeReportCtrl* MainFrame::CreateSizeReportCtrl(const wxSize& size)
