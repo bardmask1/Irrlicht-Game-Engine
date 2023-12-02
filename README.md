@@ -8,7 +8,7 @@ code snippets and scripts That I added from other people:
 
 - wxirrlicht: originally by Yiannis Mandravellos, but updated by loptr. it makes it easier to render an irrlicht scene inside of wxwidgets
 
-- CGridSceneNode: originally by Dark_Kilauea, but updated by CuteAlien. creates a dynamic grid that can be any size, spacing, color required.
+- CGridSceneNode: originally by Dark_Kilauea, but updated by CuteAlien. creates a dynamic grid that can be any size, spacing, color required. can be toggled from options menu
 
 - borrowed icons from copper-cube editor, its temporary for the moment, spent a whole day fiddling with different images that wxwidgets clamed where broken,
  but turns out the png handler hates its job, even if its an ico file and not its business.
